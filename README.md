@@ -79,7 +79,7 @@ A larger consumer-side reproduction where this happened organically: [timelessco
 +    return value !== null && typeof value === "object" && value[Symbol.for("tanstack.router.RawStream")] === true;
 ```
 
-Same change is ready as a TypeScript-source PR against `tanstack/router:main` with cross-realm tests.
+The same change could be ported to TypeScript source in `packages/router-core/src/ssr/serializer/RawStream.ts` — happy to open a PR if the brand approach looks right.
 
 ## Related
 
